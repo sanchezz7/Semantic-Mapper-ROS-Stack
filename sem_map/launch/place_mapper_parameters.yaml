@@ -1,0 +1,41 @@
+################ SCENE MARKERS NODE PARAMETERS ##################################################################
+
+pub_markers_topic: '~markers' #topic to publish the scene markers, 'scene_mapper_node/scene_markers'
+
+sub_detections: '/scene_recognition_node/detected_scenes' #subscribe the object detections topic, you can also use /object_recognition_tensorflow_node/detected_objects
+
+#lrm_isr3.csv
+#'searching_map.csv'
+#'demo_segm.csv'
+segmented_room_file: 'lrm_isr3.csv' #choose the file that contains information about the rooms properly segmented, the file should have a structure like the one in /files/isr0_R0_25.csv
+
+#this file contains information about the marker's representation used for the scene recognition classes (places 205 classes), if you use another file, keep it's structure
+scenes_representation_file: 'Places205_fullRepresentation.csv' 
+
+
+room_percentage_quality: 0.75 #minimum ratio of scene points in the image, that can be used to categorize a place
+
+nan_percentage_quality: 0.75
+nan_quality_bool: True #if true we verify also the nan points in the image, if they are above the below threshold such image will not be used to categorize a place
+
+
+categorization_bool: True #if True it will categorize the different rooms contained in "scenes_representation_file"
+                          #if false it will only load the built scene_map
+
+#lrm_isr3|18_10_2018|15:30:52.json
+#'reasoning_real_world.json'
+#searching_map_categorized.json
+built_scene_map: 'lrm_isr3|18_10_2018|15:30:52.json' #previously categorized places file
+
+built_scene_map_continue: False #if (categorization_bool == True && built_scene_map_continue == True):
+                                  #load scene map and continue to categorize it with the previous beliefs
+
+prior_classes_indexes: [11,12,18,24,44,54,64,70,93,108,112,113,129,134,135,136,138,139,174,195,198] #prior known scene classes
+
+belief_method: 0
+
+#0 iterative mean between all the classes
+#1 iterative mean with prior knowledge, normalizing class probabilities 
+#2 bayesian filtering
+#3 baysian filtering with prior knowledge, normalizing class probabilities
+

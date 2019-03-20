@@ -1,0 +1,20 @@
+################ OBJECT DETECTION TENSORFLOW NODE PARAMETERS ##################################################################
+
+sub_image_topic: '/camera/rgb/image_raw' #rgb image to subscribe, objects in the images published by this topic will be recognised
+
+pub_objects_topic: '~detected_objects' #topic where the detected objects will be published ('~detected_objects' -> object_recog_tensorflow/detected_objects)
+
+labels_file: 'mscoco_label_map.pbtxt' #file with the classes/labels of the dataset used, this files should be in the ...object_recognition/models/tensorflow/dataset_labels path
+
+
+
+#DOWLOAD CNN COD MODELS TRAINED ON COCO TO BE LOADED ON https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
+model_file: 'ssd_resnet50_v1_fpn.pb' #pre trained model to use, this files should be in the ...object_recognition/models/tensorflow/trained_models path
+
+debug: true #if debug is true you can visualize the detected objects with their bounding boxes in the topic choosed in the following parameter:
+
+pub_image_topic: '~image_detections'
+
+detections_thresh: 0.5 #minimum belief of objects to be published in pub_objects_topic -> you should tune this parameter given the used model
+
+visualize_tresh: 0.5 #minimum belief of objects occurances represent in the debug image

@@ -1,0 +1,17 @@
+uint16 req_id #0 if you want the list of all known objects
+				  #1 if you want to search for a specific object types (you need to specify the object_ids)
+				  #2 if you want to search for objects in a circular range around the robot (need to specify radius in meters)
+				  #3 if you want to know the objects in a certain map boundarie (specify xmin, xmax, ymin, ymax)
+				  #4 if you want to know the objects present in a specific room (need to specify room_id accordingly to the used place segmentation file used)
+
+uint16[] object_id
+float64 radius
+float64 xmin
+float64 xmax
+float64 ymin
+float64 ymax
+uint16 room_id
+
+---
+
+ObjectInMap[] objects_in_map

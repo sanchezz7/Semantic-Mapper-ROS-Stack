@@ -1,0 +1,30 @@
+################ OBJECT DETECTION DARKNET NODE PARAMETERS ##################################################################
+
+sub_image_topic: '/camera/rgb/image_raw' #rgb image to subscribe, objects in the images published by this topic will be detected
+
+pub_objects_topic: '~detected_objects' #topic where the detected objects will be published ('~detected_objects' -> object_recog_darknet/detected_objects)
+
+debug: true #if debug is true you can visualize the detected objects with their bounding boxes in the topic choosed in the following parameter:
+
+pub_image_topic: '~image_detections'
+
+detections_thresh: 0.5 #minimum belief of objects to be published in pub_objects_topic -> you should tune this parameter given the used model
+
+
+#cfg_file and weights_file can be downloaded from https://pjreddie.com/darknet/yolo/
+
+cfg_file: 'yolov3608.cfg' # file containing the structure of the cnn model used (should be inserted in models/darknet/cfg)
+
+weights_file: 'yolov3608.weights' #this files contain the final weights of the trained cnn and should be inserted in models/darknet/weights
+
+data_file: 'coco.data' #this files contain information about the dataset used to train the cnn, its classes/ids/labels and so on. Insert in models/darknet/data
+
+bb_file: 'objects_data.csv' #this file should contain information about the colors that you want to paint the boundig box for each class
+# should be a csv file with the structure of the default one. If you use another dataset than coco u must change this.
+
+
+
+
+
+
+

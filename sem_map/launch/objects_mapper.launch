@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="sem_map" name="objects_mapper_node" type="objects_mapper_node" output="screen">
+		<rosparam command="load" file="$(find sem_map)/launch/objects_mapper_parameters.yaml"/>
+	</node>
+
+</launch>

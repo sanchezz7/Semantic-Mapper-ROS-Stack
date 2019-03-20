@@ -1,0 +1,27 @@
+################ SCENE RECOGNITION NODE PARAMETERS ##################################################################
+
+sub_image_topic: '/camera/rgb/image_raw' #rgb image to subscribe, objects in the images published by this topic will be recognised
+
+pub_scenes_topic: '~detected_scenes' #topic where the detected objects will be published ('~detected_objects' -> object_recog_tensorflow/detected_objects)
+
+#1 GoogleNet -> requirements: .prototxt, .caffemodel in .../models/GoogleNet
+#2 AlexNet -> requirements: .prototxt, .caffemodel, mean.mat in .../models/AlexNet
+#3 VGG16 -> requirements: .prototxt, .caffemodel, mean.mat in .../models/VGG16
+#4 VGG19 -> requirements: .prototxt, .caffemodel, mean.mat in .../models/VGG19
+
+model_id: 1 #choose the pretrained model (1:GoogleNet, 2:AlexNet, 3:VGG16 4:VGG19) VGG19 should be the better one due to the Top-1/Top-5 classifications on the Places205 test set  
+
+debug: true #if debug is true you can visualize how the scene is being recognised in an image topic
+
+pub_image_topic: '~scene_image' #image with scene beliefs represented
+
+#you can also only see some scene classes beliefs, if you want so set the next flag to true, and specify the classes ids in custom_classes_indexes
+
+custom_classes: false
+
+custom_classes_indexes: [11,12,18,24,44,54,64,70,93,108,112,113,129,134,135,136,138,139,174,195,198] 
+
+normalize: false #if you are checking the predictions for only your desired classes, you can normalize the beliefs between those! If you want so, set this flag to true
+
+
+

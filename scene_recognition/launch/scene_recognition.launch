@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="scene_recognition" name="scene_recognition_node" type="scene_recognition_node" output="screen">
+		<rosparam command="load" file="$(find scene_recognition)/launch/scene_recognition_parameters.yaml"/>
+	</node>
+
+</launch>

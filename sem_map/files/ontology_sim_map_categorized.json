@@ -1,0 +1,172 @@
+[
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 12.022, 
+      "labels": [ 
+         "patio"
+      ], 
+      "scene_id": [
+         138
+      ], 
+      "xmax": 30.708, 
+      "xmin": -30.536, 
+      "ymin": 6.545, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 6.545, 
+      "labels": [
+         "kitchen"
+      ], 
+      "scene_id": [
+         108
+      ], 
+      "xmax": 30.708, 
+      "xmin": 8.597, 
+      "ymin": -0.542, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": -0.542, 
+      "labels": [
+         "home_office"
+      ], 
+      "scene_id": [
+         93
+      ], 
+      "xmax": 30.708, 
+      "xmin": 21.253, 
+      "ymin": -12.011, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": -0.542, 
+      "labels": [
+         "waiting_room" 
+      ], 
+      "scene_id": [
+         198
+      ], 
+      "xmax": 21.253, 
+      "xmin": 12.676, 
+      "ymin": -12.011, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": -0.542, 
+      "labels": [
+         "dining_room"
+      ], 
+      "scene_id": [
+         64
+      ], 
+      "xmax": 12.676, 
+      "xmin": -2.928, 
+      "ymin": -12.011, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 6.545, 
+      "labels": [
+         "pantry"
+      ], 
+      "scene_id": [
+         134
+      ], 
+      "xmax": 8.597, 
+      "xmin": -2.928, 
+      "ymin": -0.542, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 6.545, 
+      "labels": [
+         "living_room"
+      ], 
+      "scene_id": [
+         112
+      ], 
+      "xmax": -2.928, 
+      "xmin": -15.250, 
+      "ymin": -12.011, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": -6.490, 
+      "labels": [
+         "shower"
+      ], 
+      "scene_id": [
+         167
+      ], 
+      "xmax": -15.250, 
+      "xmin": -30.536, 
+      "ymin": -12.011, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 1.062, 
+      "labels": [
+         "bedroom"
+      ], 
+      "scene_id": [
+         24
+      ], 
+      "xmax": -15.250, 
+      "xmin": -30.536, 
+      "ymin": -6.490, 
+      "beliefs": [
+         1.0
+      ]
+   }, 
+   {
+      "counter": 100, 
+      "checked": true, 
+      "ymax": 6.545, 
+      "labels": [
+         "bedroom"
+      ], 
+      "scene_id": [
+         24
+      ], 
+      "xmax": -15.250, 
+      "xmin": -30.536, 
+      "ymin": 1.062, 
+      "beliefs": [
+         1.0
+      ]
+   } 
+]

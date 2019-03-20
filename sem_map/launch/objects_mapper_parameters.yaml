@@ -1,0 +1,22 @@
+################ OBJECT MARKERS NODE PARAMETERS ##################################################################
+
+sub_pointcloud: '/camera/depth_registered/points' #pointcloud subscribed, used to get the 3d locations of the objects, should be of type depth_registered/points 
+
+pub_markers_topic: '~obj_markers' #topic to publish the object markers, in this case object_mapper_node/obj_markers
+
+#/object_detection_dk/detected_objects (object detection with bounding boxes -> yolo architectures using darknet libraries)
+#/object_detection_tf/detected_objects (object detection with bounding boxes -> models available in tensorflow zoo model using tensorflow libraries)
+sub_detections: /object_detection_dk/detected_objects #subscribe the object detections topic, you can also use /object_recognition_tensorflow_node/detected_objects
+
+markers_file: 'objects_data.csv' 
+
+resolution: 1.0
+
+registration: true #if registration is set to false the node will not subscribe to the object detections topic and will not represent objects and verify if they are or not in the same place 
+                  #if false, it will load a previous known object map (object_map_file) and use that in its services to respond where is some kind of object, or to send the full list of objects in the map
+
+object_map_loader: false #if set to true, the node will load the objects described in "object_map_file", register them, and so on...
+
+object_map_file: 'lrm_isr|objects|22_10_2018|22:57:50.json'
+
+

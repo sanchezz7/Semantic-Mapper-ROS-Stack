@@ -1,0 +1,243 @@
+[
+   {
+      "counter": 27, 
+      "checked": true, 
+      "ymax": 10.5, 
+      "labels": [
+         "corridor", 
+         "attic", 
+         "staircase"
+      ], 
+      "scene_id": [
+         54, 
+         11, 
+         174
+      ], 
+      "xmax": 14.7575, 
+      "xmin": 12.3445, 
+      "ymin": 4.3072, 
+      "beliefs": [
+         0.6813241839408875, 
+         0.08779094368219376, 
+         0.046477120369672775
+      ]
+   }, 
+   {
+      "counter": 50, 
+      "checked": true, 
+      "ymax": 4.3072, 
+      "labels": [
+         "waiting_room", 
+         "corridor", 
+         "lobby", 
+         "patio", 
+         "office", 
+         "veranda", 
+         "classroom"
+      ], 
+      "scene_id": [
+         198, 
+         54, 
+         113, 
+         138, 
+         129, 
+         195, 
+         44
+      ], 
+      "xmax": 19.9502, 
+      "xmin": 12.3445, 
+      "ymin": -0.9696, 
+      "beliefs": [
+         0.3469620645046234, 
+         0.1527126133441925, 
+         0.11249299347400665, 
+         0.08677268028259277, 
+         0.0706484317779541, 
+         0.05259872227907181, 
+         0.0460234209895134
+      ]
+   }, 
+   {
+      "counter": 167, 
+      "checked": true, 
+      "ymax": 1.0764, 
+      "labels": [
+         "corridor", 
+         "pantry"
+      ], 
+      "scene_id": [
+         54, 
+         134
+      ], 
+      "xmax": 12.3445, 
+      "xmin": -6.5509, 
+      "ymin": -1.4893, 
+      "beliefs": [
+         0.9194056391716003, 
+         0.015577399171888828
+      ]
+   }, 
+   {
+      "counter": 81, 
+      "checked": true, 
+      "ymax": 3.7792, 
+      "labels": [
+         "office", 
+         "corridor", 
+         "home_office", 
+         "kitchen", 
+         "pantry"
+      ], 
+      "scene_id": [
+         129, 
+         54, 
+         93, 
+         108, 
+         134
+      ], 
+      "xmax": 11.9417, 
+      "xmin": 6.4048, 
+      "ymin": 1.0764, 
+      "beliefs": [
+         0.3286956548690796, 
+         0.2907552421092987, 
+         0.11004462093114853, 
+         0.07116739451885223, 
+         0.04555566981434822
+      ]
+   }, 
+   {
+      "counter": 1, 
+      "checked": false, 
+      "ymax": 4.9582, 
+      "labels": [
+         "office"
+      ], 
+      "scene_id": [
+         129
+      ], 
+      "xmax": 11.9417, 
+      "xmin": 6.4048, 
+      "ymin": 3.7792, 
+      "beliefs": [
+         0.0476190485060215
+      ]
+   }, 
+   {
+      "counter": 1, 
+      "checked": false, 
+      "ymax": 8.1929, 
+      "labels": [
+         "office"
+      ], 
+      "scene_id": [
+         129
+      ], 
+      "xmax": 9.5682, 
+      "xmin": 6.4048, 
+      "ymin": 4.9582, 
+      "beliefs": [
+         0.0476190485060215
+      ]
+   }, 
+   {
+      "counter": 1, 
+      "checked": false, 
+      "ymax": 8.1929, 
+      "labels": [
+         "office"
+      ], 
+      "scene_id": [
+         129
+      ], 
+      "xmax": 11.9417, 
+      "xmin": 9.5682, 
+      "ymin": 4.9582, 
+      "beliefs": [
+         0.0476190485060215
+      ]
+   }, 
+   {
+      "counter": 32, 
+      "checked": true, 
+      "ymax": 8.1929, 
+      "labels": [
+         "office", 
+         "classroom", 
+         "home_office", 
+         "kitchen"
+      ], 
+      "scene_id": [
+         129, 
+         44, 
+         93, 
+         108
+      ], 
+      "xmax": 6.4048, 
+      "xmin": -6.5509, 
+      "ymin": 1.0764, 
+      "beliefs": [
+         0.63939368724823, 
+         0.2641851305961609, 
+         0.0627160295844078, 
+         0.0033196609001606703
+      ]
+   }, 
+   {
+      "counter": 396, 
+      "checked": true, 
+      "ymax": 1.744, 
+      "labels": [
+         "corridor", 
+         "living_room"
+      ], 
+      "scene_id": [
+         54, 
+         112
+      ], 
+      "xmax": -6.5509, 
+      "xmin": -39.9921, 
+      "ymin": -1.4893, 
+      "beliefs": [
+         0.9150246977806091, 
+         0.012223104014992714
+      ]
+   }, 
+   {
+      "counter": 35, 
+      "checked": true, 
+      "ymax": 10.5, 
+      "labels": [
+         "corridor", 
+         "attic"
+      ], 
+      "scene_id": [
+         54, 
+         11
+      ], 
+      "xmax": -38.1677, 
+      "xmin": -39.9921, 
+      "ymin": 1.744, 
+      "beliefs": [
+         0.892495334148407, 
+         0.02480376698076725
+      ]
+   }, 
+   {
+      "counter": 1, 
+      "checked": false, 
+      "ymax": 5.0054, 
+      "labels": [
+         "office"
+      ], 
+      "scene_id": [
+         129
+      ], 
+      "xmax": -41.0, 
+      "xmin": -45.8168, 
+      "ymin": -9.035, 
+      "beliefs": [
+         0.0476190485060215
+      ]
+   }
+]
